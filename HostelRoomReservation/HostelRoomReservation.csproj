@@ -86,6 +86,7 @@
     <Content Include="fonts\flaticon\font\flaticon.html" />
     <Content Include="fonts\flaticon\font\Flaticon.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Guest_Info.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="images\about.jpg" />
     <Content Include="images\bg_1.jpg" />
@@ -135,6 +136,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_Info.aspx.cs">
+      <DependentUpon>Guest_Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest_Info.aspx.designer.cs">
+      <DependentUpon>Guest_Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
