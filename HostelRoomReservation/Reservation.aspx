@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hostel.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="HostelRoomReservation.Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Hostel.Master" AutoEventWireup="true" CodeBehind="Reservation.aspx.cs" Inherits="HostelRoomReservation.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -26,7 +26,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Full Name">
+			    					<input type="text" class="form-control" placeholder="Name">
 			    				</div>
 								</div>
 								<div class="col-md-6">

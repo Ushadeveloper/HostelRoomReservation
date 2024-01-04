@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HostelRoomReservation.DataAccess;
+using HostelRoomReservation.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +13,18 @@ namespace HostelRoomReservation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            GuestInformation Guest = new GuestInformation();
+            Guest.Name = txtName.Text;
+            Guest.DOB = txtdate.Text;
+            Guest.Email = txtEmail.Text;
+            Guest.Phone = txtPhone.Text;
+            Guest.Address = txtAddress.Text;
+            DataAccessDb db = new DataAccessDb();
+            db.SaveContactFormData(Guest);
 
         }
     }
